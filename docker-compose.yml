@@ -9,7 +9,7 @@ services:
       - ./src:/var/www/html
     working_dir: /var/www/html
     ports:
-      - 18080:80
+      - 3000:80
   db:
     build: ./docker/db
     volumes:
@@ -21,4 +21,4 @@ services:
       MYSQL_PASSWORD: docker
       TZ: 'Asia/Tokyo'
     ports:
-      - 13306:3306
+      - 3306:3306
